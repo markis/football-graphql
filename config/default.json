@@ -1,0 +1,10 @@
+{
+  "domain": "https://football.markis.codes",
+  "yahoo": {
+    "client_id": "",
+    "client_secret": ""
+  }, 
+  "stattleship": {
+    "token": ""
+  }
+}

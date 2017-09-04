@@ -1,0 +1,7 @@
+/.vscode
+/node_modules
+
+/config/development.json
+
+/index.js
+/index.js.map

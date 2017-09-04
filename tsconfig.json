@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "lib": [ "es6", "esnext.asynciterable" ],
+    "baseUrl": ".",
+    "module": "es2015",
+    "outDir": "./tmp",
+    "sourceMap": true,
+    "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "moduleResolution": "node",
+    "paths": {
+      "src": [ "./src/" ]
+    }
+  }
+}

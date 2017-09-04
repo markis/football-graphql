@@ -1,0 +1,10 @@
+{
+  "domain": "DOMAIN",
+  "yahoo": {
+    "client_id": "YAHOO_CLIENT_ID",
+    "client_secret": "YAHOO_CLIENT_SECRET"
+  }, 
+  "stattleship": {
+    "token": "STATTLESHIP_TOKEN"
+  }
+}
