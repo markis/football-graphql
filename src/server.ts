@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 8080;
 const app = express();
 app.use(basics, oauth, login);
 
-app.use('/', graphqlHTTP({
+app.use('/', ensureAuthenticated, graphqlHTTP({
   schema: schema,
   rootValue: resolvers,
   graphiql: true,
