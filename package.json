@@ -3,8 +3,8 @@
   "description": "Graphql server for yahoo fantasy football",
   "version": "1.0.0",
   "scripts": {
-    "build": "npx tsc && npm run build:script && npm run build:cleanup",
-    "build:script": "npx rollup -c",
+    "build": "tsc && npm run build:script && npm run build:cleanup",
+    "build:script": "rollup -c",
     "build:cleanup": "rm -rf ./tmp/",
     "debug": "npm run build && node --nolazy --inspect-brk=5858 ./index.js",
     "start": "npm run build && node ./index.js",
