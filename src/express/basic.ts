@@ -1,16 +1,10 @@
 import { config } from '../config';
-import * as express_ from 'express';
-import * as cors_ from 'cors';
-import * as session_ from 'cookie-session';
-import * as cookieParser_ from 'cookie-parser';
-import * as bodyParser from 'body-parser';
-import * as methodOverride_ from 'method-override';
-
-const express = express_;
-const cors = cors_;
-const cookieParser = cookieParser_;
-const methodOverride = methodOverride_;
-const session = session_;
+import express from 'express';
+import cors from 'cors';
+import session from 'cookie-session';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
+import methodOverride from 'method-override';
 
 export const basics = express();
 

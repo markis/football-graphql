@@ -1,11 +1,10 @@
 import { config } from '../config';
 import { User } from '../interfaces/User';
-import * as express_ from 'express';
+import express from 'express';
 import { Request, Response, NextFunction } from 'express';
-import * as pass from 'passport';
+import pass from 'passport';
 import { Strategy } from 'passport-oauth2';
-import * as refresh from 'passport-oauth2-refresh';
-const express = express_;
+import refresh from 'passport-oauth2-refresh';
 
 export const oauth = express();
 export const passport = pass;

@@ -1,9 +1,10 @@
-import * as express_ from 'express';
+import express from 'express';
 import { Request, Response } from 'express';
-const express = express_;
 
 export const login = express();
-login.get('/login', (req: Request, res: Response) => {
+login.get('/login', loginResponse);
+
+export function loginResponse(req: Request, res: Response) {
   res.statusCode = 401;
   res.end(`
     <html lang="en">
@@ -52,4 +53,4 @@ login.get('/login', (req: Request, res: Response) => {
     </body>
     </html>
   `.replace(/\s+/g, ' '));
-});
+}

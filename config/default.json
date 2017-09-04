@@ -1,5 +1,6 @@
 {
   "domain": "https://football-graphql.markis.codes",
+  "newrelic_key": "",
   "yahoo": {
     "client_id": "",
     "client_secret": ""

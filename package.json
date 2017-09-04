@@ -11,6 +11,7 @@
     "start:watch": "nodemon -x yarn start -e .ts"
   },
   "dependencies": {
+    "@alexlur/rollup-plugin-typescript": "^1.0.4",
     "@markis/stattleship": "^0.0.7-0",
     "@types/body-parser": "^1.16.5",
     "@types/config": "^0.0.32",
@@ -33,12 +34,15 @@
     "express-graphql": "^0.6.7",
     "express-session": "^1.15.5",
     "graphql": "^0.10.5",
+    "graphql-tag": "^2.4.2",
     "method-override": "^2.3.9",
+    "newrelic": "^2.2.0",
     "passport": "^0.4.0",
     "passport-oauth2": "^1.4.0",
     "passport-oauth2-refresh": "^1.0.0",
     "passport-yahoo-oauth": "^0.1.2",
     "rollup": "^0.49.2",
+    "rollup-plugin-graphql": "^0.1.0",
     "simple-oauth2": "^1.3.0",
     "typescript": "^2.5.2",
     "yahoo-fantasy": "^2.0.4"

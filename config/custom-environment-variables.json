@@ -1,5 +1,6 @@
 {
   "domain": "DOMAIN",
+  "newrelic_key": "NEW_RELIC_KEY",
   "yahoo": {
     "client_id": "YAHOO_CLIENT_ID",
     "client_secret": "YAHOO_CLIENT_SECRET"
