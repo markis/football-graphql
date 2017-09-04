@@ -16,7 +16,10 @@ export const basics = express();
 
 basics.disable('x-powered-by');
 basics.options('*', cors())
-basics.use(cors());
+basics.use(cors({
+  origin: true,
+  credentials: true
+}));
 basics.use(cookieParser());
 basics.use(bodyParser.urlencoded({
   extended: false
