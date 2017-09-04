@@ -16,9 +16,8 @@ export const stats = (name: Name) =>
 export const statsLoader = new DataLoader((names: string[]) => Promise.all(
   names.map(name =>
     nflClient.playerSeasonStats({
-      on: new Date().toISOString(),
       player_id: name,
-      per_page: 1
+      per_page: 2
     })
     .then((player) => {
       const stats = player && player.player_season_stats || []

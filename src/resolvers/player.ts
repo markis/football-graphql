@@ -1,5 +1,5 @@
 import { nflClient } from '../clients/nflClient';
-import { statsLoader } from './stats';
+import { stats } from './stats';
 import { FootballPlayerSeasonStatParams, PlayerParams, Player, PlayingPosition, FootballPlayerSeasonStat } from '@markis/stattleship';
 import * as DataLoader from 'dataloader';
 
@@ -30,10 +30,13 @@ export const playerLoader = new DataLoader((names: string[]) => Promise.all(
       const position = data && data.playing_positions && 
                         data.playing_positions.find(p => p.id == player.playing_position_id)
       const names = player.name.split(' ');
-      const name = nflClient.createPlayerKey(...names);
+      const name = {
+        first: names.shift() || '',
+        last: names.join(' ')
+      }
 
       player.position = position;
-      player.stats = statsLoader.load(name);
+      player.stats = stats(name);
       return player;
     })
     .catch(err => err)

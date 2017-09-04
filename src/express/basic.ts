@@ -21,7 +21,7 @@ basics.use(bodyParser.json());
 basics.use(methodOverride());
 basics.use(session({
   name: 'token',
-  secret: 'Wy^esZh`39R4Gz>*',
+  secret: config.yahooClientSecret(),
   cookie: {
     secure: true,
     httpOnly: true,

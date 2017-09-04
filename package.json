@@ -36,8 +36,9 @@
     "passport-oauth2": "^1.4.0",
     "passport-oauth2-refresh": "^1.0.0",
     "passport-yahoo-oauth": "^0.1.2",
+    "rollup": "^0.49.2",
     "simple-oauth2": "^1.3.0",
-    "stattleship": "file:../stattleship",
+    "typescript": "^2.5.2",
     "yahoo-fantasy": "^2.0.4"
   }
 }
