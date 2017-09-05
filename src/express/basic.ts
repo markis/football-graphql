@@ -9,7 +9,6 @@ import methodOverride from 'method-override';
 export const basics = express();
 
 basics.disable('x-powered-by');
-basics.options('*', cors())
 basics.use(cors({
   origin: true,
   credentials: true
