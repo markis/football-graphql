@@ -7,13 +7,13 @@ export function myteams(args: any, context: any) {
       const teams = [];
       for (const gameTeams of data.teams) {
         for (const team of gameTeams.teams) {
-          teams.push({
+          teams.push(Object.assign(team, {
             id: team.team_key,
             name: team.name,
             logo: team.team_logos[0].url,
             roster: (args: any, context: any) =>
               myroster({ id: team.team_key }, context)
-          });
+          }));
         }
       }
       return teams;

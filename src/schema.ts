@@ -1,6 +1,21 @@
 import { buildSchema } from 'graphql';
 export const schema = buildSchema(`
 type Team {
+  team_key: String
+  team_id: ID
+  name: String
+  is_owned_by_current_login: Int
+  url: String 
+  waiver_priority: Int
+  number_of_moves: Int
+  number_of_trades: Int
+  league_scoring_type: String
+  team_paid: Int
+  draft_position: Int
+  has_draft_grade: Int
+  draft_grade: String
+  draft_recap_url: String
+
   id: ID
   name: String
   logo: String
