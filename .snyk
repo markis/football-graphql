@@ -1,0 +1,50 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.14.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:debug:20170905':
+    - simple-oauth2 > debug:
+        patched: '2020-04-06T15:14:04.849Z'
+    - newrelic > https-proxy-agent > debug:
+        patched: '2020-04-06T15:14:04.849Z'
+    - express > finalhandler > debug:
+        patched: '2020-04-06T15:14:04.849Z'
+  'npm:extend:20180424':
+    - newrelic > https-proxy-agent > extend:
+        patched: '2020-04-06T15:14:04.849Z'
+    - simple-oauth2 > request > extend:
+        patched: '2020-04-06T15:14:04.849Z'
+    - yahoo-fantasy > request > extend:
+        patched: '2020-04-06T15:14:04.849Z'
+  'npm:hoek:20180212':
+    - simple-oauth2 > joi > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - simple-oauth2 > joi > topo > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - simple-oauth2 > request > hawk > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - yahoo-fantasy > request > hawk > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - simple-oauth2 > request > hawk > boom > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - yahoo-fantasy > request > hawk > boom > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - simple-oauth2 > request > hawk > sntp > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - yahoo-fantasy > request > hawk > sntp > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - simple-oauth2 > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+    - yahoo-fantasy > request > hawk > cryptiles > boom > hoek:
+        patched: '2020-04-06T15:14:04.849Z'
+  'npm:stringstream:20180511':
+    - simple-oauth2 > request > stringstream:
+        patched: '2020-04-06T15:14:04.849Z'
+    - yahoo-fantasy > request > stringstream:
+        patched: '2020-04-06T15:14:04.849Z'
+  'npm:tough-cookie:20170905':
+    - simple-oauth2 > request > tough-cookie:
+        patched: '2020-04-06T15:14:04.849Z'
+    - yahoo-fantasy > request > tough-cookie:
+        patched: '2020-04-06T15:14:04.849Z'
